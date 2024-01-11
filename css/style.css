@@ -1,0 +1,506 @@
+:root {
+    --bg-color: #f3f1ef;
+    --light-blue: #A0D1CC;
+    --dark-blue: #195C80;
+    --accent-color: #F9C437;
+    --red: #D63927;
+    --text-color: #241F1C;
+    --darkModeIcon: url('../img/sunIcon.png');
+}
+.dark {
+    --bg-color: #241F1C;
+    --text-color: #f3f1ef;
+    --accent-color: rgb(58, 73, 119);
+    --darkModeIcon: url('../img/moonIcon.png');
+ 
+}
+@font-face{
+    font-family:'dortmund';
+    src: url("../img/Dortmund-ExtraBold.otf") format("opentype");
+}
+@font-face{
+    font-family:'cyber';
+    src: url("../img/CyberAngel.ttf") format("truetype");
+}
+/* #region loading*/
+#loader {
+    animation: rotate 2s linear infinite;
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -25px 0 0 -25px;
+    width: 50px;
+    height: 50px;
+}
+.path {
+    stroke: none; 
+    stroke-linecap: round;
+    animation: dash 1.5s ease-in-out infinite;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);}
+}
+@keyframes dash {
+    0% {
+        stroke-dasharray: 1, 150;
+        stroke-dashoffset: 0;}
+    50% {
+        stroke-dasharray: 90, 150;
+        stroke-dashoffset: -35;}
+    100% {
+        stroke-dasharray: 90, 150;
+        stroke-dashoffset: -124;}
+}
+
+/* #endregion */
+/* #region global effects*/
+main{
+    margin-left: auto;
+    margin-right: auto;
+}
+body {
+    margin: 0%;
+    overflow-x: hidden;
+    background-color: var(--bg-color);
+    
+}
+input[type=checkbox] {
+    display: none;
+}
+.square{
+    aspect-ratio: 1/1;
+}
+.card{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding:10px;
+}
+.line{
+    clear:both;
+    height: 4vw;
+    background-color: var(--dark-blue);
+    margin: 10px 0px 10px;
+    text-align: center;
+}
+
+/*#endregion*/
+/* #region Navigation */
+.nav {
+    background-color: var(--bg-color);
+    font-family: 'dortmund';
+    position: sticky;
+    z-index: 100;
+    padding:5px 0px 0px;
+}
+.nav nav{
+    float:right;
+    margin-right: 40px;
+    height: 40px;
+}
+.nav a{
+    height:100%;
+    padding: 20px 10px;
+    text-decoration: none;
+    color:var(--text-color);
+}
+.navLink{
+    display: block;
+    margin: 0px 20px 0px;
+    height: 100%;
+    float: left;
+    background-color: var(--bg-color);
+}
+.active{
+    background-color: var(--accent-color);
+}
+.logo{
+    clear:both;
+    width:20%;
+}
+#darkModeIcon{
+    width: 30px;
+    height: auto;
+}
+
+.menu-list {
+    max-width: 300px;
+    margin: auto;
+    height: 500px;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    border-radius: 10px;
+}
+
+.mobileNav {
+    display: none;
+    overflow: hidden;
+    background-color: var(--bg-color);
+    position: relative;
+}
+
+.mobileNav #menus {
+    display: none;
+}
+ 
+.mobileNav a {
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 14px 16px;
+    font-size: 16px;
+    font-family: 'dortmund';
+    display: block;
+}
+ 
+.mobileNav a.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+ 
+.mobileNav a:hover {
+    background-color: var(--light-blue);
+    color: black;
+}
+
+/* #endregion */
+/* #region HomePage */
+#content{
+    height:90vh;
+    border:1px solid transparent  ;
+}
+#menu{
+    display: flex;
+    overflow: hidden;
+    height: 100%;
+    float: right;
+    margin-left: 40%;
+    margin-right: 2%;
+
+}
+.menuBoxOuter{
+    display: block;
+    float: right;
+    height: 90%;
+    width: 200px;;
+    margin: 30px 10px;
+    overflow: hidden;;
+}
+.menuBox{
+    position: relative;
+    display: block;
+    float: right;
+    height: 100%;
+    width:150px;
+    overflow: visible;
+    background-color: var(--text-color);
+}
+.imgSlide{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left:0;
+    height: 70%;
+    pointer-events:none;
+}
+.menuText{
+    font-family: 'dortmund';
+    font-size: 15px;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    color: var(--bg-color);
+    margin: 0% 1%;
+    background-color: #D63927;
+    padding: 30px 20px;
+}
+.mainContent{
+    display: block;
+    float: left;
+    width: 30%;
+    height: 90vh;
+    border:1px solid red;
+}
+#characterImg {
+    display: block;
+    height: 80%;
+    position: absolute;
+    bottom:15px;
+    left: 5%;
+    pointer-events: none;
+    z-index: -1;
+    object-fit: contain ;
+}
+#painting {
+    display: block;
+    height: 90%;
+    position: absolute;
+    left: -4%;
+    bottom: 5%;
+    pointer-events: none;
+    z-index: -2;
+    transform: scale(-1, 1);
+}
+/*#endregion*/
+
+/* #region ---------------------------------------------- 3d  */
+#stlContent{
+    width: 90%;
+    margin: 20px auto;
+}
+#stlContent img{
+    display: block;
+    width:100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+#stlContent h1{
+    font-family: 'dortmund';
+    color: var(--text-color);
+    font-size: 20px;
+    margin: .5vw 0vw .3vw;
+}
+#stlContent h2 {
+    font-family: 'dortmund';
+    margin: 0vw 0;
+    font-size: 15px;
+    color: var(--text-color);
+}
+#stlContent p{
+    font-family: 'dortmund';
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    padding: 0.25em 0.5em;
+    background-color: var(--light-blue);
+}
+#stlContent a{
+    display: block;
+    text-decoration: none;
+    color: #241F1C;
+}
+.fa{
+    float: right;
+}
+.stlRow{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    row-gap: 30px;
+}
+.stlContainer{
+    display: block;
+    float: left;
+    width: 24.5%;
+    border-right: 2px solid var(--text-color);
+}
+.stlContainer:nth-child(4n){
+    border:none;
+}
+.stlContainerInner{
+    width: 75%;
+    display:block;
+    margin: auto;
+}
+
+
+/* #endregion */
+/* #region ---------------------------------------------------ART */
+ #gallery {
+    display: none;
+     width: 90%;
+     margin-top: 30px;
+     margin-left: auto;
+     margin-right: auto;
+     columns: 4;
+     column-width: 1rem;
+     text-align: justify-all;
+ }
+ #gallery img{
+    box-sizing: border-box;
+    border: 3px solid var(--text-color);
+    pointer-events: none;
+ }
+ .imgContainer {
+     display: inline-block;
+ }
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+ .imgContainer:after {
+     content: "";
+     display:inline-block;
+     width: 100%;
+     height: 0;
+ }
+
+ .imgContainer img {
+     width: 88%;
+     display: block;
+     float: right;
+ }
+
+ .paletteHorizontal {
+     clear: both;
+     height: 5%;
+     width: 90%;
+ }
+
+ .paletteVertical {
+     display: block;
+     float: auto;
+     height: 90%;
+     width: 10%;
+ }
+
+ .swatchHorizontal {
+     background-color: black;
+     float: left;
+     aspect-ratio: 1/1;
+     height: 20px;
+     margin: 5px 5px 5px;
+ }
+
+ .swatchVertical {
+     background-color: black;
+     float: auto;
+     aspect-ratio: 1/1;
+     height: 20px;
+     margin: 5px 5px 5px;
+ }
+ .dataHorizontal,.dataVertical{
+    font-family: 'dortmund';
+        font-size: 15px;
+        color:var(--text-color);
+ }
+ .dataHorizontal {
+     float: left;
+     height: 20px;
+     width: 200px;
+     writing-mode: horizontal-tb;
+     text-orientation: sideways;
+ }
+ .dataVertical {
+     float: left;
+     height: 50%;
+     width: 20px;
+     writing-mode: vertical-rl;
+     text-orientation: sideways;
+ }
+
+ .hidden {
+     display: none;
+ }
+/*#endregion*/
+@media only screen and (min-width: 600px) {
+    .logo {
+        width: 100px;
+    }
+}
+@media only screen and (max-width: 960px) {
+    #characterImg {
+        left:-20%;
+    }
+    #painting {
+        left:-30%;
+    }
+    #menu{
+        width: 100%;
+        margin-right: 0%;
+    }
+    .stlContainer {
+        width: 49.5%;
+    }
+
+    .stlContainer:nth-child(4n) {
+        border: 2px solid #241F1C;
+    }
+
+    .stlContainer:nth-child(2n) {
+        border: none;
+    }
+    #stlContent h1{
+        font-size:20px
+    }
+    #stlContent h2 {
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .nav{
+        display: none   ;
+    }
+    .mobileNav{
+        display: block;
+    }
+    #gallery{
+        columns: 1;
+    }
+    #menu{
+        display: inline;
+        width: 100%;
+        height: 100%;;
+        margin-right: 0%;
+        padding-top: 30px;
+    }
+    .menuText{
+        writing-mode: horizontal-tb;
+        font-size:40px;
+    }
+    .menuBoxOuter{
+        clear: both;
+        display: inline;
+        height: 20%;
+        width: 90%;
+        margin: 30px 10px;
+        overflow: visible;
+    }
+    .menuBox{
+        height: 100%;
+        width: 100%;;
+    }
+    .imgSlide{
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left:auto;
+        right:0;
+        height:140%;
+        width: auto;;
+        pointer-events:none;
+    }
+    
+    .stlContainer {
+        width: 100%;
+        border: none;
+    }
+    .stlRow {
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+/* ----------resources
+image splitter --> https: //pinetools.com/split-image (split 3x4)
+sprite generator --> https: //www.toptal.com/developers/css/sprite-generator
+*/

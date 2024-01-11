@@ -1,0 +1,349 @@
+:root {
+    --bg-color: #f3f1ef;
+    --light-blue: #A0D1CC;
+    --dark-blue: #195C80;
+    --yellow: #F9C437;
+    --red: #D63927;
+    --dark-red: #241F1C;
+}
+.dark {
+    --bg-color: #241F1C;
+    --text-color: #f3f1ef;
+    --accent-color: #195C80;
+}
+canvas {
+    background: var(--bg-color);
+    border: 3px solid var(--text-color);
+    display: block;
+    margin: 0 auto;
+}
+iframe{
+    background: var(--bg-color);
+    border: 3px solid var(--dark-red);
+    display: block;
+    margin: 0 auto;
+}
+
+#gameContent{
+    margin-top: 5px;
+    background-color: var(--bg-color);
+    height: 100vh;
+}
+#gameWindow{
+    display: block;
+    height: 80vh;
+    width: 80%;
+}
+
+.gameMenu {
+    float: left;
+    width: 170px;
+    height: 90vh;
+    padding: 10px 10px;
+    background-color:   var(--text-color);
+    border-radius: 10px;
+}
+.gameMenuInner {
+    height: 100%;
+    margin:auto;
+    border-radius: 10px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: var(--bg-color);
+    scrollbar-color: var(--red) var(--dark-red);
+    scrollbar-width: thin;
+}
+
+.gameBtn {
+    width: 100%;
+    aspect-ratio: 1/1;
+    margin: 10px  auto 10px;
+    box-shadow: none;
+    border:none;
+    border-bottom: 5px solid #195C80;
+    background-color: transparent;
+}
+.gameMenuIcon{
+    width: 100%;
+}
+
+#gameWindow {
+    display:inline;
+    float: left;
+    width: 80%;
+    height: 90vh;
+}
+.game {
+    margin: auto;
+}
+#mobileBanner{
+    display: none;
+}
+ button {
+     float: left;
+     font-family: "dortmund";
+     font-size: 16px;
+     letter-spacing: 2px;
+     text-decoration: none;
+     text-transform: uppercase;
+     cursor: pointer;
+     border: 3px solid #000;
+     padding: 0.25em 0.5em;
+     box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+     position: relative;
+     padding: 8px 10px;
+     margin: 0px 10px;
+ }
+
+ button:hover {
+     box-shadow: 0px 0px 0px 0px;
+ }
+ .projectContainer{
+    
+    margin:10px auto;
+    height: 90%;
+    width:70%;
+
+ }
+ .projectImg{
+    max-width:100%;
+    max-height:100%;
+    object-fit: contain;
+ }
+  .mySlides {
+    display: none;
+  }
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .activeDot, .dot:hover {
+    background-color: #717171;
+  }
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+/* #region breakout */
+#breakoutWindow{
+    display: none;
+}
+#brick {
+    display: none;
+}
+#breakoutStart{
+    position: relative;
+    top:-50%;
+    left:50%;
+    transform: translate(-50%,50%);
+    
+}
+/* #endregion */
+/* #region painting */
+#paintWindow{
+    display: none;
+}
+ .paintMenu {
+    margin: auto;
+    margin-top: 20px;
+    width: 800px;
+    padding: 4px 0px;
+    overflow: hidden;
+ }
+
+ #clear{
+    background-color: #D63927;
+ }
+ #save{
+    background-color: #A0D1CC;
+ }
+ .slider{
+    float: left;
+    margin: 10px 10px;
+    width:170px;
+    height: 15px;
+    border-radius: 7px;
+    background: #d3d3d3;
+    outline: none;
+ }
+ .slider::-webkit-slider-thumb, .slider::-moz-range-thumb {
+     -webkit-appearance: none;
+     appearance: none;
+     width: 18px;
+     height: 18px;
+     border-radius: 50%;
+     background: #241F1C;
+     cursor: pointer;
+ }
+ .color {
+     float: left;
+     height: 30px;
+     width: 30px;
+     background-color: rgb(0, 0, 0);
+     border-radius: 50%;
+     margin: 0px 15px 0px;
+     border: 3px solid black;
+     box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+ }
+ .color:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 0px 0px;
+ }
+ .colorActive{
+    display: none;
+    height: 10px;
+    width: 10px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    margin: 10px 10px 0px;
+ }
+
+ .color:nth-child(1) {
+     background-color: #EDE6DE;
+ }
+
+ .color:nth-child(2) {
+     background-color: #A0D1CC;
+ }
+
+ .color:nth-child(3) {
+     background-color: #195C80;
+ }
+
+ .color:nth-child(4) {
+     background-color: #F9C437;
+ }
+
+ .color:nth-child(5) {
+     background-color: #D63927;
+ }
+
+ .color:nth-child(6) {
+     background-color: #241F1C;
+ }
+ /* #endregion */
+#rotaCanvas{
+    display: block;
+    height:700px;
+    width:800px;
+    margin: 0px auto;
+}
+#rotaWindow{
+    display: none;
+    height:1000px;
+    width: 1800px;
+
+}
+#rotaGame{
+    top:-30%;
+    left:-63%;
+    height:100%;
+    width:100%;
+    border:none;
+    background-color: var(--bg-color);
+}
+
+@media only screen and (max-width: 1000px) {
+    .gameMenu{
+        clear: both;
+        height:200px;
+        width: 97%;
+        margin-top:30px;
+    }
+    .gameMenuInner{
+        width: 100%;
+    }
+    .gameBtn{
+        width: 20%;
+        border-bottom: none;;
+    }
+    #gameWindow{
+        width: 100%;
+        height: fit-content;
+    }
+    #breakoutStart{
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+}
+/*canvas size*/
+@media only screen and (max-width: 806px) {
+    canvas{
+        width: 98%;
+    }
+    .gameContent{
+        height: 150vh;
+    }
+   
+    .slider{
+        clear: both;
+    }
+    .color{
+        width: 20px;
+        height: 20px;
+    }
+    .colorActive{
+        display: none;
+    }
+    button{
+        font-size: 12px;
+    }
+    .paintMenu{
+        width: 100%;
+    }
+    .gameMenu{
+        height: 100px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .color{
+        width: 15px;
+        height: 15px;
+    }
+    .gameMenu {
+        width: 95%;
+        height: 60vh;
+    }
+    #save{
+        clear:both;
+    }
+    .gameBtn {
+        width: 48%;
+        margin: auto;
+    }
+}
