@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>kaelaru</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <svg id="loader"viewBox="0 0 50 50">
+        <circle id="loaderPath" class="path" cx="25" cy="25" r="20" fill="none" stroke-width="7"></circle>
+    </svg>
+    <div class="mobileNav">
+        <a href="index.html" class=""><img class="logo" src="img/logo.png"></a>
+        <div id="menus">
+            <a href="art.html">Art</a>
+            <a href="projects.html">Projects</a>
+            <a href="3d.html">3d</a>
+        </div>
+        <a href="javascript:void(0);" class="icon"
+           onclick="mobileNav()">
+           <i onclick="navIcon(this)"
+                    class="fa fa-plus-circle">
+           </i>
+        </a>
+    </div>
+    <div class="nav">
+        <a href="index.html"><img class="logo" src="img/logo.png"></a>
+        <nav>
+            <div class="navLink active"><a href="art.html" class="active">Art</a></div>
+            <div class="navLink"><a href="projects.html">Projects</a></div>
+            <div class="navLink"><a href="3d.html">3D</a></div>
+            <label class="button">
+                <img id="darkModeIcon" class="btnImg" src="img/moonIcon.png" alt="dark mode button">
+                <input type="checkbox" id="darkToggle">
+              </label>
+        </nav>
+    </div>
+    <main>
+        <div id="gallery" class="animate-bottom"></div>
+    </main>
+    
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.0/color-thief.umd.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="js/gallery.js"></script>
+<script src="js/main.js"></script>
+</html>

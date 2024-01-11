@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>kaelaru</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/games.css" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="mobileNav">
+        <a href="index.html" class=""><img class="logo" src="img/logo.png"></a>
+        <div id="menus">
+            <a href="art.html">Art</a>
+            <a href="projects.html">Projects</a>
+            <a href="3d.html">3d</a>
+        </div>
+        <a href="javascript:void(0);" class="icon"
+           onclick="mobileNav()">
+           <i onclick="navIcon(this)"
+                    class="fa fa-plus-circle">
+           </i>
+        </a>
+    </div>
+    <div class="nav">
+        <a href="index.html"><img class="logo" src="img/logo.png"></a>
+        <nav>
+            <div class="navLink"><a href="art.html" >Art</a></div>
+            <div class="navLink"><a href="projects.html"class="active">Projects</a></div>
+            <div class="navLink"><a href="3d.html">3D</a></div>
+            <label class="button">
+                <img id="darkModeIcon" class="btnImg" src="img/moonIcon.png" alt="dark mode button">
+                <input type="checkbox" id="darkToggle">
+              </label>
+        </nav>
+    </div>
+    <main>
+        <div id="gameContent">
+            <div id="gameWindow">
+                <div id="breakoutWindow">
+                    <img display="none" id="brick" src="img/brick.png">
+                    <canvas id="breakoutCanvas"></canvas>
+                    <button id="breakoutStart"> start </button>
+                </div>
+                <div id="paintWindow">
+                    <canvas id="paintCanvas"></canvas>
+                    <div class="paintMenu">
+                        <div class="color" data-col="#f3f1ef"><div class="colorActive"></div></div>
+                        <div class="color" data-col="#A0D1CC"><div class="colorActive"></div></div>
+                        <div class="color" data-col="#195C80"><div class="colorActive"></div></div>
+                        <div class="color" data-col="#F9C437"><div class="colorActive"></div></div>
+                        <div class="color" data-col="#D63927"><div class="colorActive"></div></div>
+                        <div class="color" data-col="#241F1C"><div class="colorActive"></div></div>
+                        <div id="sliderContainer"><input class ="slider" id="brushSize"type="range" min ="1" max="30"></div>
+                        <button id="save">save</button>
+                        <button id="clear"> clear </button>
+                    </div>
+                </div>
+                <div id="runnerWindow"></div>
+                <div id="rotaWindow">
+                    <div id="rotaCanvas">
+                    </div>
+                </div>     
+                <div id="visWindow">
+                    <div class="projectContainer">
+                        <div class="mySlides fade">
+                            <div class="numbertext">1 / 1</div>
+                            <img class="projectImg" src="img/BookCover.jpg">
+                            <div class="text"></div>
+                        </div>
+                    </div>
+                    <br>
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+
+                    </div>
+                </div>
+                <div id="uiWindow">
+                    <div class="projectContainer">
+                        <div class="mySlides fade">
+                            <div class="numbertext">1 / 2</div>
+                            <img class="projectImg" src="img/bookPage.JPG">
+                            <div class="text">Book Review Landing Page</div>
+                        </div>
+                        <div class="projectContainer">
+                            <div class="mySlides fade">
+                                <div class="numbertext">1 / 2</div>
+                                <img class="projectImg" src="img/StorePage.png">
+                                <div class="text">Book Review Landing Page</div>
+                            </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">2 / 2</div>
+                            <img class="projectImg" src="img/bankingApp.png">
+                            <div class="text">Mobile Banking App</div>
+                        </div>
+                    </div>
+                    <br>
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="gameMenu">
+                <div class="gameMenuInner">
+                    <button class="gameBtn" id="uiBtn" value="uiWindow">
+                        <img class ="gameMenuIcon" src="img/uiIcon.png">
+                    </button>
+                    <button class="gameBtn" id="visBtn" value="visWindow">
+                        <img class ="gameMenuIcon" src="img/visualIcon.png">
+                    </button>
+                    <button class="gameBtn" id="breakoutBtn" value="breakoutWindow">
+                        <img class ="gameMenuIcon" src="img/breakoutIcon.png">
+                    </button>
+                    <button class="gameBtn" id="paintingBtn" value="paintWindow">
+                        <img class ="gameMenuIcon" src="img/paintIcon.png">
+                    </button>
+                    <button class="gameBtn" id="rotaBtn" value="rotaWindow">
+                        <img class ="gameMenuIcon" src="img/rotaIcon.png">
+                    </button>
+                </div> 
+            </div>
+            
+        </div>
+       
+    </main>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/games/paint.js"></script>
+<script src="js/games/breakout.js"></script>
+<script src="js/games/gameController.js"></script>
+
+</html>

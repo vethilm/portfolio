@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+        <div class="mobileNav">
+            <a href="index.html" class=""><img class="logo" src="img/logo.png"></a>
+            <div id="menus">
+                <a href="art.html">Art</a>
+                <a href="projects.html">Projects</a>
+                <a href="3d.html">3d</a>
+            </div>
+            <a href="javascript:void(0);" class="icon"
+               onclick="mobileNav()">
+               <i onclick="navIcon(this)"
+                        class="fa fa-plus-circle">
+               </i>
+            </a>
+        </div>
+
+    <div class="nav">
+        <a href="index.html"><img class="logo" src="img/logo.png"></a>
+        <nav>
+            <div class="navLink"><a href="art.html" >Art</a></div>
+            <div class="navLink"><a href="projects.html">Projects</a></div>
+            <div class="navLink active"><a href="3d.html" class="active">3D</a></div>
+            <label class="button">
+                <img id="darkModeIcon" class="btnImg" src="img/moonIcon.png" alt="dark mode button">
+                <input type="checkbox" id="darkToggle">
+              </label>
+        </nav>
+    </div>
+  
+
+    <div id="stlContent">
+    
+        <div class="stlRow">
+            <div class="stlContainer">
+                <div class="stlContainerInner">
+                    <img src="img/3d/miles.png">
+                    <h1> Miles Morales</h1>
+                    <h2> Into the SpiderVerse</h2>
+                    <a href="downloadFiles/moralesWebs.stl" download>
+                        <p> download <i class="fa fa-download" style="font-size:20px"></i></p>
+                    </a>
+                </div>
+            </div>
+            <div class="stlContainer">
+                <div class="stlContainerInner">
+                    <img src="img/3d/pompom.png">
+                    <h1> Pom Pom</h1>
+                    <h2> Honkai Star Rail</h2>
+                    <a href="downloadFiles/pompom.stl" download>
+                        <p> download <i class="fa fa-download" style="font-size:20px"></i></p>
+                    </a>
+                </div>
+            </div>
+            <div class="stlContainer">
+                <div class="stlContainerInner">
+                    <img src="img/3d/720X720-gsjhot.jpg">
+                    <h1> Sheet Ghost</h1>
+                    <a href="downloadFiles/ghost.stl" download>
+                        <p> download ghost <i class="fa fa-download" style="font-size:20px"></i></p>
+                    </a>
+                    <a href="downloadFiles/ghostBase.stl" download>
+                        <p> download base <i class="fa fa-download" style="font-size:20px"></i></p>
+                    </a>
+                </div>
+            </div>
+            <div class="stlContainer">
+                <div class="stlContainerInner">
+                    <img src="img/3d/valo.jpg">
+                    <h1> Frenzy</h1>
+                    <h2> Valorant</h2>
+                    <a href="downloadFiles/frenzy.stl" download>
+                        <p> download  <i class="fa fa-download" style="font-size:20px"></i></p>
+                    </a>
+                </div>
+            </div>
+            <div class="stlContainer">
+                <div class="stlContainerInner">
+                    <img src="img/3d/gir.jpg" style="opacity:50%;">
+                    <h1>Coming soon</h1>
+                </div>
+            </div>
+            <div class="stlContainer">
+                <div class="stlContainerInner">
+                    <img src="img/3d/gwen.PNG" style="opacity:50%;">
+                    <h1>Coming soon</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+    <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+    <script>
+        kofiWidgetOverlay.draw('kaelaru', {
+            'type': 'floating-chat',
+            'floating-chat.donateButton.text': 'Support me',
+            'floating-chat.donateButton.background-color': '#195C80',
+            'floating-chat.donateButton.text-color': '#fff'
+        });
+    </script>
+</body>
+
+</html>

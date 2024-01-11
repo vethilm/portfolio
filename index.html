@@ -1,1 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>kaelaru</title>
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+<div class="mobileNav">
+    <a href="index.html" class=""><img class="logo" src="img/logo.png"></a>
+    <div id="menus">
+        <a href="art.html">Art</a>
+        <a href="projects.html">Projects</a>
+        <a href="3d.html">3d</a>
+    </div>
+    <a href="javascript:void(0);" class="icon"
+       onclick="mobileNav()">
+       <i onclick="navIcon(this)"
+                class="fa fa-plus-circle">
+       </i>
+    </a>
+</div>
+    
+    <div class="nav">
+        <a href="index.html"><img class="logo" src="img/logo.png"></a>
+        <nav>
+            <div class="navLink"><a href="art.html">Art</a></div>
+            <div class="navLink"><a href="projects.html">Projects</a></div>
+            <div class="navLink"><a href="3d.html">3D</a></div>
+            <label class="button">
+                <img id="darkModeIcon" class="btnImg" src="img/moonIcon.png" alt="dark mode button">
+                <input type="checkbox" id="darkToggle">
+              </label>
+        </nav>
+    </div>
+     
+
+<body>
+    <div id="content">
+        <div >
+                <img id="characterImg" src="img/charImg.png">
+                <img id="painting" src="img/easelSun.png">
+        </div>
+        <div id="menu">
+            <div class="menuBoxOuter">
+                <a href ="art.html">
+                    <div  id="art" class="menuBox">
+                        <p class="menuText">Art</p>
+                         <img class="imgSlide" src="img/easel.png">
+                    </div>
+                </a>
+            </div>
+            <div class="menuBoxOuter">
+                <a href="projects.html">
+                    <div id="games" class="menuBox">
+                        <p class="menuText">Projects</p>
+                        <img class="imgSlide" src="img/game.png">
+                    </div>
+                 </a>
+            </div>
+            <div class="menuBoxOuter">
+                <a href="3d.html">
+                    <div id="printing" class="menuBox">
+                        <p class="menuText">3d</p>
+                        <img class="imgSlide" src="img/printer.png">
+                    </div>
+                </a>
+            </div>
+            
+            
+            
+        </div>
+       
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
