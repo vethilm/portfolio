@@ -3,6 +3,7 @@ const gallery = document.getElementById("gallery");
 
 const colorThief = new ColorThief();
 const imageURLs = [
+    'https://64.media.tumblr.com/97c66a79bb56e8f82cc61748e8645466/7db01c19756de426-13/s540x810/992b482843d2c87bdb703a9c4a3723883882c3f4.pnj',
     'https://64.media.tumblr.com/d94d19391c086bbee804ead4ff934149/5bd73e928459b0c0-d8/s640x960/d59887c4f899aa110c26cde71a030e410b93ddf6.pnj',
 
     'https://64.media.tumblr.com/e4907a99d8025c9bd2360f839407249b/7dd15a61736b2c11-ee/s540x810/196662755576b76b90acf9bad270e423c6317543.pnj',
