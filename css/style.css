@@ -503,6 +503,9 @@ iframe{
   }
   .project-thumbnail{
     height: fit-content;
+    img{
+      height:fit-content
+    }
   }
   .project-desc{
     margin:0px
@@ -588,7 +591,12 @@ iframe{
   body{
     width: 100%;
   } 
-
+  .art-gallery{
+    gap:0px
+  }
+  .gallery{
+    gap:0px
+  }
 
   header nav a {
     margin: 10px 10px 0 0;
