@@ -210,12 +210,7 @@ footer  a{
   flex-wrap: wrap;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 10px auto;
-}
+
 
 .overview {
   display: flex;
@@ -348,6 +343,11 @@ img {
   flex-direction: row;
   align-items: center;
   justify-content:space-evenly;  
+  img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
 }
 .art-gallery-item:nth-child(even) {
   flex-direction: row-reverse;
@@ -371,6 +371,10 @@ img {
   img{
    max-height: 300px;
    margin: 8px;
+   max-width: 100%;
+   height: auto;
+   display: block;
+   margin: 10px auto;
   }
 }
 .caption{
@@ -380,17 +384,19 @@ img {
 .project-thumbnail {
   width: 100%;
   max-width: 1000px;
-  height: 350px;
-  margin-bottom: 10px;
+ margin-bottom: 10px;
   border-radius: 50px;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
-  
   img {
     height: 100%;
     object-fit: contain;
     object-position: center;
     border-radius: 20px;  
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
   }
 }
 
@@ -425,10 +431,9 @@ img {
 }
 .motion-item{
   display: flex;
-  flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  width:560px;
+  width:50%;
   margin:0px;
   padding: 0px;
 }
@@ -497,9 +502,6 @@ iframe{
     flex-direction: column;
     gap:10px;
     height: fit-content;
-    img{
-      height: fit-content;
-    }
   }
   .project-thumbnail{
     height: fit-content;
@@ -528,6 +530,7 @@ iframe{
     }
   }
   .motion-item{
+    width:560px;
     margin: 0px !important
   }
   .motion-item:nth-child(even){
@@ -589,6 +592,7 @@ iframe{
   }
   body{
     width: 100%;
+    overflow-x: hidden;
   } 
   .art-gallery{
     gap:0px
@@ -596,6 +600,24 @@ iframe{
   .gallery{
     gap:0px
   }
+  .project-thumbnail {
+    width: 100%;
+    max-width: 1000px;
+    margin-bottom: 10px;
+    border-radius: 50px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 50px;
+
+
+    img {
+        height: 100%;
+        width: 100%;
+        padding: 0px;
+        object-fit: cover;
+    
+    }
+
+}
 
   header nav a {
     margin: 10px 10px 0 0;
