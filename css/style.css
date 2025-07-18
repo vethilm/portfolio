@@ -520,7 +520,6 @@ iframe{
   .art-process{
     flex-direction: row;
     max-width: 100%;
-    flex-grow: 100vw;
     object-fit: contain;
     img{
       width:45%;
