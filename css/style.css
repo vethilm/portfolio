@@ -353,6 +353,10 @@ footer  a{
      columns: 4;
      text-align:center;
  }
+  .imgContainer {
+     display: inline-block;
+     margin:10px;
+ }
  #gallery img{
     box-sizing: border-box;
     pointer-events: none;
@@ -363,10 +367,18 @@ footer  a{
   font-style: normal;
 }
 
- .imgContainer {
-     display: inline-block;
-     margin:10px;
- }
+@media only screen and (max-width: 600px) {
+   #gallery{
+        columns: 1;
+        width:90%;
+        overflow-y:hidden
+    }
+    .imgContainer {
+     width:100% !important;
+     height:fit-content !important;
+  }
+}
+
 .animate-bottom {
   position: relative;
   -webkit-animation-name: animatebottom;
