@@ -1,3 +1,12 @@
+:root{
+  --primary-background: #f6f1ef;
+  --primary-text: #000;
+  --accent: #2F5BA2;
+  --accent-hover: #10274a;
+  --on-accent:#f6f1ef;
+  --text-color:#000;
+}
+
 html {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
@@ -96,12 +105,15 @@ html.w-mod-touch * {
     color: #fff;
     line-height: inherit;
     cursor: pointer;
-    background-color: #3898ec;
+    background-color: var(--accent);
     border: 0;
     border-radius: 0;
     padding: 9px 15px;
     text-decoration: none;
     display: inline-block
+}
+.w-button:hover{
+    background-color: var(--accent-hover);
 }
 
 input.w-button {
@@ -491,7 +503,7 @@ strong {
 
 .quote-block {
     color: var(--text-color);
-    border-left: 3px solid #72adaf;
+    border-left: 3px solid var(--accent);
     margin-top: 10px;
     padding: 10px 20px;
     font-size: 19px;
@@ -541,12 +553,13 @@ strong {
 
 .button.h3 {
     mix-blend-mode: normal;
-    background-color: #72adaf;
+  
     border-radius: 8px;
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
-    position: static
+    position: static;
+    color: var(--on-accent) !important;
 }
 
 .h3 {
@@ -558,9 +571,9 @@ strong {
 }
 
 .heading-2 {
-    color: var(--text-color);
+    color: var(--on-accent);
     text-align: center;
-    border-bottom: 3px solid #000;
+    border-bottom: 3px solid var(--on-accent);
     flex-flow: row;
     justify-content: center;
     align-items: flex-start;
@@ -607,14 +620,23 @@ strong {
     font-family: Montserrat, sans-serif;
     font-size: 16px
 }
+.paragraph-gdd {
+    color: var(--on-accent);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Montserrat, sans-serif;
+    font-size: 16px
+}
 
 .gddcells {
-    background-color: #72adaf;
+    background-color: var(--accent);
     border-radius: 5px;
     flex-flow: column;
     justify-content: flex-start;
     align-items: center;
-    padding: 0 10px 6px
+    padding: 0 10px 6px;
+    color: var(--on-accent);
 }
 
 .project-header {
@@ -652,10 +674,11 @@ strong {
 
 .cell {
     text-align: left;
-    border-right: 3px solid #72adaf;
+    border-right: 3px solid var(--accent);
     border-radius: 0;
     padding-left: 5px;
-    padding-right: 5px
+    padding-right: 5px;
+    color: var(--on-accent);
 }
 
 .quick-stack-4 {
