@@ -33,24 +33,24 @@ preloadImages(imageURLs, (error, images) => {
             gallery.style.display="block";
             
             fillGallery(images);
-            var largest = findLargestWidth(images);
-            var docWidth = document.body.clientWidth
-            if (largest >= docWidth) {
-                gallery.style.columns = 1;
-            }
-            else {
-                gallery.style.columns = Math.floor(docWidth / largest);
-            }
+            // var largest = findLargestWidth(images);
+            // var docWidth = document.body.clientWidth
+            // if (largest >= docWidth) {
+            //     gallery.style.columns = 1;
+            // }
+            // else {
+            //     gallery.style.columns = Math.floor(docWidth / largest);
+            // }
         },"600");
         addEventListener("resize", (event) => {
-            var largest = findLargestWidth(images);
-            var docWidth = document.body.clientWidth
-            if (largest >= docWidth) {
-                gallery.style.columns = 1;
-            }
-            else {
-                gallery.style.columns = Math.floor(docWidth / largest);
-            }
+            // var largest = findLargestWidth(images);
+            // var docWidth = document.body.clientWidth
+            // if (largest >= docWidth) {
+            //     gallery.style.columns = 1;
+            // }
+            // else {
+            //     gallery.style.columns = Math.floor(docWidth / largest);
+            // }
 
         });
     }
@@ -75,12 +75,12 @@ function fillGallery(images) {
         const data = document.createElement('div');
         const palette = document.createElement('div');
 
-        if (height(img) > width(img)) {
-            createPortrait(container, img, data, palette, portraitCount);
+        if (height(img) < width(img)) {
+            create1(container, img, data, palette, portraitCount);
             portraitCount++;
         }
-        if (height(img) <= width(img)) {
-            createLandscape(container, img, data, palette, landscapeCount);
+        if (height(img) >= width(img)) {
+            create2(container, img, data, palette, landscapeCount);
             landscapeCount++;
         }
         data.innerHTML = (portraitCount + landscapeCount)+":"+ width(img) + "x" + height(img)   ;
@@ -91,45 +91,19 @@ function fillGallery(images) {
     )
 };
 
-function createPortrait(container, img, data, palette, portraitCount) {
+function create1(container, img, data, palette, portraitCount) {
+    container.appendChild(palette);
     data.setAttribute('class', 'dataVertical');
     palette.setAttribute('class', 'paletteHorizontal');
-    const scale = .8;
-    var newScale = scale;
-    var h = height(img);
-    while (h >= 800) {
-        h = h * scale;
-        newScale = newScale * scale;
-    }
-    container.style.width = width(img) * newScale + 'px';
-    container.style.height = height(img) * newScale + 'px';
-    if (portraitCount % 2 == 0) {
-        img.style.float = "left";
-        container.appendChild(data);
-        container.appendChild(palette);
-    }
-    else {
-        container.appendChild(palette);
-        container.appendChild(img);
-        container.appendChild(data);
-        img.style.float = "left";
-    }
+    //container.appendChild(data);
+
 }
-function createLandscape(container, img, data, palette, landscapeCount) {
+function create2(container, img, data, palette, landscapeCount) {
     palette.setAttribute('class', 'paletteVertical');
-    container.appendChild(palette);
+     container.appendChild(palette);
     data.setAttribute('class', 'dataHorizontal');
-    container.appendChild(data);
-    const scale = .7;
-    var newScale = scale;
-    var w = width(img);
-    while (w >= 900) {
-        w = w * scale;
-        console.log(w);
-        newScale = newScale * scale;
-    }
-    container.style.width = width(img) * newScale + 'px';
-    container.style.height = height(img) * newScale + 'px';
+    // container.appendChild(data);
+
     if (landscapeCount % 2 == 0) {
         img.style.float = "left";
         palette.style.float = "right";
