@@ -188,9 +188,11 @@ nav :hover{
   display:none;
   flex-direction: row;
   z-index: 2;
+
 }
 .mobile-links{
   display:none;
+  background-image: url(../images/cardboard.png);
   background-color: var(--primary-background);
   height:150vh;
   padding: 90px 50px;
