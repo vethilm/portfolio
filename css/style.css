@@ -1,11 +1,11 @@
 /* all new (non webflow) pages should use this style sheet*/
 
 :root{
-  --primary-background: #f6f1ef;
+  --primary-background: #f8f8ef;
   --primary-text: #000;
   --accent: #2F5BA2;
   --accent-hover: #10274a;
-  --on-accent:#f6f1ef
+  --on-accent:##f8f8ef;
 }
 
 @font-face {
