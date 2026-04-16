@@ -30,7 +30,7 @@ body {
   width: 80vw;
   overflow-x: hidden;
   background-image: url(../images/cardboard.png);
- 
+  background-size: 30%; 
   background-color: var(--primary-background);
 }
 /* #region loading*/
@@ -313,9 +313,11 @@ footer  a{
 .icon {
   width: 40px;
   margin: 0px 4px 4px 0px;
+  border-radius: 100%;
 }
 .icon:hover{
   width: 45px;
+  
 }
 .links{
   display: flex;
@@ -323,6 +325,7 @@ footer  a{
   gap:15px;
   margin: 24px auto;
   height:45px;
+  align-items: center;
 }
 
 .intro {
