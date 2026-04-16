@@ -29,6 +29,8 @@ body {
   margin: auto;
   width: 80vw;
   overflow-x: hidden;
+  background-image: url(../images/cardboard.png);
+ 
   background-color: var(--primary-background);
 }
 /* #region loading*/
@@ -138,6 +140,7 @@ header {
     bottom:-1;
     z-index: -1;
     transform: rotate(-2deg);
+        mix-blend-mode: multiply;
 }
 }
 
@@ -334,8 +337,8 @@ footer  a{
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+  mix-blend-mode: multiply;
 }
-
 .intro-text {
   margin-left: 0%;
   margin-right: auto;
@@ -359,6 +362,7 @@ footer  a{
     font-size:34px;
     text-align: center;
     padding: 0px 25px;
+
   }
   h2{
     color: var(--primary-background);;
@@ -618,7 +622,7 @@ footer  a{
 
 /* Sketch button 
 ::after adds offset border
-hover::before adds higlight */
+hover::before adds highlight */
  .ctaBtn{
     padding: 4px;
     display: inline-block;
@@ -659,6 +663,7 @@ hover::before adds higlight */
     bottom:-.1;
     z-index: -1;
     transform: rotate(-1.5deg);
+    mix-blend-mode: multiply;
   }
 }
 
