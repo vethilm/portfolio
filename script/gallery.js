@@ -55,11 +55,13 @@ preloadImages(imageURLs, (error, images) => {
         });
     }
 });
+//loading
 function randomColor(){
     colors = ['#A0D1CC', '#195C80' ,'#F9C437', '#D63927'];
     rand = Math.floor(Math.random() *4);
     return colors[rand];
 }
+//create images
 function fillGallery(images) {
     let portraitCount = 0;
     let landscapeCount = 0;
@@ -173,6 +175,8 @@ function getColors(img) {
      }
           */
 }
+
+//add color palette 
 function fillPalette(palette, img) {
     var colors = getColors(img);
     for (let i = 0; i <= 5; i++) {
