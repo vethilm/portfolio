@@ -338,7 +338,7 @@ footer  a{
   display: flex;
   align-items: center;
   justify-items: right;
-  background-image: url(../images/home/heroimg.png);
+  background-image: url(../images/home/heroimg-blue.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -351,7 +351,7 @@ footer  a{
   width: 80%;
   height:100%;
   max-width: 700px;
-  background-image: url(../images/home/text-bubble-black.svg);
+  background-image: url(../images/home/text-bubble-blue.svg);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -838,7 +838,7 @@ iframe{
     justify-content: start;
     align-items: start;
     background-position: bottom;
-    background-image: url(../images/home/heroimg-mobile.png);
+    background-image: url(../images/home/heroimg-blue-mobile.png);
   }
   .intro-text{
     margin-top: -20%;
