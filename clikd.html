@@ -1,111 +1,177 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anna Burns</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Anna Burns</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon" />
-  <link href="https://fonts.googleapis.com" rel="preconnect" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
+    <link
+      href="https://fonts.gstatic.com"
+      rel="preconnect"
+      crossorigin="anonymous"
+    />
+  </head>
 
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous" />
-</head>
+  <body>
+    <header>
+      <a href="index.html" class="logo">
+        <img class="logo-icon" src="images/logo.svg" alt="Anna Burns" />
+      </a>
+      <nav>
+        <a href="index.html">Projects</a>
+        <a href="illustration.html">Art + Illustration</a>
+        <a href="motion-design.html">Motion Design</a>
+        <a href="about.html">About</a>
+      </nav>
+    </header>
+    <header class="mobile-nav">
+      <a href="index.html" class="logo">
+        <img class="logo-icon" src="images/logo.svg" alt="Anna Burns" />
+      </a>
+      <div class="menu-icon" onclick="toggleNav()"></div>
+      <nav class="mobile-links" id="links">
+        <a href="index.html">Projects</a>
+        <a href="illustration.html">Art + Illustration</a>
+        <a href="motion-design.html">Motion Design</a>
+        <a href="about.html">About</a>
+      </nav>
+    </header>
+    <div id="overlay" onclick="off()"></div>
 
-<body>
-  <header>
-    <a href="index.html" class="logo">
-      <img class="logo-icon" src="images/logo.svg" alt="Anna Burns">
-    </a>
-    <nav>
-      <a href="index.html">Projects</a>
-      <a href="illustration.html">Art + Illustration</a>
-      <a href="motion-design.html">Motion Design</a>
-      <a href="about.html">About</a>
-    </nav>
-  </header>
-  <header class="mobile-nav">
-    <a href="index.html" class="logo">
-      <img class="logo-icon" src="images/logo.svg" alt="Anna Burns" />
-    </a>
-    <div class="menu-icon " onclick="toggleNav()"> </div>
-    <nav class="mobile-links" id="links">
-      <a href="index.html">Projects</a>
-      <a href="illustration.html">Art + Illustration</a>
-      <a href="motion-design.html">Motion Design</a>
-      <a href="about.html">About</a>
-    </nav>
-  </header>
-  <div id="overlay" onclick="off()"></div>
-
-
-  <!-- left -->
-  <div style="display:flex; justify-content:space-between;margin: 60px auto; max-width: 1200px;"> 
-  <div style="width:58%; padding: 0 20px;">
-    <div class="project-header " style="margin: 0 auto;">
-      <h1 >Clikd</h1>
-      <h4>Post your plays. Find your players. Talk in voice. Stay close. On loop.</h4>
+    <!-- left -->
+    <div
+      style="
+        display: flex;
+        justify-content: space-between;
+        margin: 60px auto;
+        max-width: 1000px;
+      "
+    >
+      <div>
+        <div class="project-header" style="margin: 0 auto">
+          <h1>Clikd</h1>
+          <h4>
+            Post your plays. Find your players. Talk in voice. Stay close. On
+            loop.
+          </h4>
+        </div>
+        <p>
+          <a href="https://clikd.com/en">Clikd</a> is a desktop + mobile gaming
+          communication app that connects players with their gaming communities.
+          I designed the UI and prototyped the user flow for the app. Below are
+          the main features.
+        </p>
+      </div>
+      <!-- end left -->
     </div>
-    <p><A href="https://clikd.com/en">Clikd</A> is a mobile gaming communication app that connects players with their gaming communities. I designed the UI and prototyped the user flow for the app.
-    
-    </p>
-       <ul id="clikd-features">
-      <li>
-        <img src="images/clikd/Valor1.png" alt="Clikd Moments" class="clikd-avatar" />
-        <div>
-          <h3>Flare</h3>
-          <p>Connects players in real-time.</p>
+    <!-- end right -->
+    <div
+      class="process"
+      style="
+        flex-direction: column;
+        align-items: right;
+        max-width: 1000px;
+        margin: 30px auto;
+        padding: 0 20px;
+      "
+    >
+      <ul id="clikd-features">
+        <li>
+          <img
+            src="images/clikd/Valor1.png"
+            alt="Clikd Moments"
+            class="clikd-avatar"
+          />
+          <div>
+            <h3>Flare</h3>
+            <p>Connecting players in real-time, users send a Flare to signal they're looking for teammates, and the system matches them with compatible players based on game, rank, role, region, trust, and social proximity. 
+            </p>
+          </div>
+        </li>
+        <div class="feature-section">
+          <img
+            class="feature-img"
+            src="images/clikd/app-images/flare-feed.png"
+            alt=""
+          />
+          <img
+            class="feature-img"
+            src="images/clikd/app-images/Flare-Creation.png"
+            alt=""
+          />
         </div>
-      </li>
-      <li>
-        <img src="images/clikd/Eldrin.png" alt="Clikd Moments" class="clikd-avatar" />
-        <div>
-          <h3>Moments</h3>
-          <p>Share game clips and highlights, </p>
+        <li>
+          <img
+            src="images/clikd/Eldrin.png"
+            alt="Clikd Moments"
+            class="clikd-avatar"
+          />
+          <div>
+            <h3>Moments</h3>
+            <p>Share game clips and highlights, powered by an Interest Graph algorithm, users discover content based on interests that the algorithm learns from real-time behavior, not just what their friends post.</p>
+          </div>
+        </li>
+        <div class="feature-section">
+          <img
+            class="feature-img"
+            src="images/clikd/app-images/vid-feed.png"
+            alt=""
+          />
+          <img
+            class="feature-img"
+            src="images/clikd/app-images/vid-comments.png"
+            alt=""
+          />
         </div>
-      </li>
-      <li>
-        <img src="images/clikd/Drop.png" alt="Clikd Moments" class="clikd-avatar" />
-        <div>
-          <h3>Drop</h3>
-          <p>Ephemeral voice and video calls</p>
+        <li>
+          <img
+            src="images/clikd/Drop.png"
+            alt="Clikd Moments"
+            class="clikd-avatar"
+          />
+          <div>
+            <h3>Drop</h3>
+            <p>Ephemeral gaming session system: voice, video, screenshare, chat in one room. When everyone leaves or the host ends it, everything is deleted. No chat history, no permanent recordings, no clutter. Clean slate.</p>
+          </div>
+        </li>
+        <div class="feature-section">
+          <img
+            class="feature-img"
+            src="images/clikd/app-images/drop.png"
+            alt=""
+          />
         </div>
-      </li>
-      <li>
-        <img src="images/clikd/Circle.png" alt="Clikd Moments" class="clikd-avatar" />
-        <div>
-          <h3>Circles</h3>
-          <p>Create and join gaming groups</p>
+        <li>
+          <img
+            src="images/clikd/Circle.png"
+            alt="Clikd Moments"
+            class="clikd-avatar"
+          />
+          <div>
+            <h3>Circles</h3>
+            <p>A persistent named group of friends with integrated chat, shared content, and one-tap voice/video drops.</p>
+          </div>
+        </li>
+        <div class="feature-section">
+          <img
+            class="feature-img"
+            src="images/clikd/app-images/circles-list.png"
+            alt=""
+          />
+          <img
+            class="feature-img"
+            src="images/clikd/app-images/circles-stats.png"
+            alt=""
+          />
         </div>
-      </li>
-    </ul>
-  </div>
-  <!-- end left -->
-  <!-- right -->
-  <div style="width:40%; display:flex; justify-content:center; align-items:center;display:inline-block">
-    <img src="images/clikd/profile-screen.png" style="max-width: 90%; height: auto;" alt="">
-  </div>
-  <!-- end right -->
-
-  </div>
-
-  <div class="process" style="flex-direction:column; align-items:center; max-width: 1200px; margin: 60px auto; padding: 0 20px;">
-    <h2>Process</h2>
-    <h3>Research</h3>
-    <p>To design the app, I started by researching the gaming communication space and identifying user needs. 
-      
-      user journey maps to guide the design process.</p>
-    
-    <img src="images/clikd/wireframe.png" alt="wireframes" style="width:100%; max-width:800px; margin: 40px auto; display:block;">
-    <img src="images/clikd/userFlows.png" alt="userflows" style="width:100%; max-width:800px; margin: 40px auto; display:block;">
-
-    <h3>Requirements</h3>
-
-    <h3>Research</h3>
-  </div>
-</body>
-
+      </ul>
+    </div>
+  </body>
 </html>

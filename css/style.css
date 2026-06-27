@@ -276,9 +276,17 @@ footer  a{
     border-bottom: 2px double var(--accent);
     width: fit-content;
     padding-bottom: 2px;
-  
+    font-size: 35px;
   }
-
+}
+.feature-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:30px
+}
+.feature-img{
+  width:25%;
 }
 .clikd-avatar h3::after{
   content: '';
