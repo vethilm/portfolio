@@ -306,6 +306,25 @@ footer  a{
   filter: drop-shadow(2px 2px 0px var(--accent));
   border:2px solid var(--accent);
 }
+@media (max-width: 600px) {
+ #clikd-features{
+  border:1px solid red;
+  li{
+    flex-direction:column;
+    align-items:center;
+  }
+  
+ }
+ .feature-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:30px
+}
+.feature-img{
+  width:45%;
+}
+}
 
 .image-grid {
   display: flex;
