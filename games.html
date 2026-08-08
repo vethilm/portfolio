@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anna Burns</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/games.css" />
+    <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link
+      href="https://fonts.gstatic.com"
+      rel="preconnect"
+      crossorigin="anonymous"
+    />
+</head>
+<body>
+        <header>
+      <a href="index.html" class="logo">
+        <img class="logo-icon" src="images/logo.svg" alt="Anna Burns" />
+      </a>
+      <nav>
+        <a href="index.html">Projects</a>
+        <a href="illustration.html">Art + Illustration</a>
+        <a href="motion-design.html">Motion Design</a>
+        <a href="about.html" class="active-page">About</a>
+      </nav>
+    </header>
+    <header class="mobile-nav">
+      <a href="index.html" class="logo">
+        <img class="logo-icon" src="images/logo.svg" alt="Anna Burns" />
+      </a>
+      <div class="menu-icon " onclick="toggleNav()">      </div>
+      <nav class="mobile-links" id="links">
+        <a href="index.html">Projects</a>
+        <a href="illustration.html" >Art + Illustration</a>
+        <a href="motion-design.html">Motion Design</a>
+        <a href="about.html" class="active-page">About</a>
+      </nav>
+    </header>
+    <main>
+        <div id="gameContent">
+            <div class="gameMenu">
+                <div class="gameMenuInner">
+                    <button class="gameBtn" id="breakoutBtn" value="breakoutWindow">
+                        <p>Breakout</p>
+                    </button>
+                    <button class="gameBtn" id="paintingBtn" value="paintWindow">
+                        <p>paint</p>
+                    </button>
+                    <button class="gameBtn" id="rotaBtn" value="rotaWindow">
+                        <p>rota</p>
+                    </button>
+                    <button class="gameBtn" id="rotaBtn" value="rotaWindow">
+                        <p>Roots</p>
+                    </button>
+                </div> 
+            </div>
+            <div id="gameWindow">
+                <div id="breakoutWindow" class="center">
+                    <img display="none" id="brick" src="images/brick.png">
+                    <canvas id="breakoutCanvas"></canvas>
+                    <button id="breakoutStart"> start </button>
+                </div>
+                <div id="paintWindow" class="center">
+                    <canvas id="paintCanvas"></canvas>
+                    <div class="paintMenu">
+                        <div class="color" data-col="#f3f1ef"><div class="colorActive"></div></div>
+                        <div class="color" data-col="#A0D1CC"><div class="colorActive"></div></div>
+                        <div class="color" data-col="#195C80"><div class="colorActive"></div></div>
+                        <div class="color" data-col="#F9C437"><div class="colorActive"></div></div>
+                        <div class="color" data-col="#D63927"><div class="colorActive"></div></div>
+                        <div class="color" data-col="#241F1C"><div class="colorActive"></div></div>
+                        <div id="sliderContainer"><input class ="slider" id="brushSize"type="range" min ="1" max="30"></div>
+                        <button id="save">save</button>
+                        <button id="clear"> clear </button>
+                    </div>
+                </div>
+                <div id="runnerWindow"></div>
+                <div id="rotaWindow" class="center">
+                    <div id="rotaCanvas">
+                         <iframe frameborder="0" src="https://itch.io/embed-upload/4807323?color=333333" allowfullscreen="" width="1240"
+                height="380"><a href="https://extzero.itch.io/rota">Play Rota on itch.io</a></iframe>
+                    </div>
+                </div>     
+            
+
+            
+        </div>
+       
+    </main>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="script/games/paint.js"></script>
+<script src="script/games/breakout.js"></script>
+<script src="script/games/gameController.js"></script>
+
+</html>
