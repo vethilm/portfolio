@@ -60,7 +60,6 @@ body {
   animation: dash 1.5s ease-in-out infinite;
 }
 
-/*  text styles duplicated from webflow styles*/
 /* a {
   cursor: url(../images/cursors/pointer.png), pointer !important;
 } */
@@ -142,7 +141,7 @@ header {
   z-index: 10;
 }
 .gdiv {
-  /* border: 1px solid rgb(56, 55, 55); */
+  border: 1px solid rgb(56, 55, 55);
 }
 .g100 {
   grid-column: span 4 / span 4;
@@ -210,20 +209,21 @@ header {
 .tab {
   padding-left: 10px;
 }
-.halftone{
-  padding: 50px 0px;
+
+.relative{
+  position: relative;
 }
 .halftone::before{
   position: absolute;
   content: '';
-  background: radial-gradient(2px at center, rgba(236, 234, 234, 0.274), var(--primary-background));
+  background: radial-gradient(2px at center, rgba(140, 140, 177, 0.2), var(--primary-background));
   background-size: 5px 5px;
   background-repeat: repeat;
   width: 200vw;
-  height: 100%;
+  height: 110%;
   left:-300px;
   z-index:-1;
-  mask-image: linear-gradient( rgb(0 0 0 / 0), rgb(0 0 0), rgb(0 0 0 / 0));
+  mask-image: linear-gradient( rgb(0 0 0 / 0) 0%, rgb(0 0 0) 15%,rgb(0 0 0)85%, rgb(0 0 0 / 0)100%);
 }
 
 .logo-icon {
@@ -335,19 +335,19 @@ footer {
   flex-direction: row;
   align-items: center;
   justify-content: spa;
-  margin-bottom: 20px;
-  border: 1px solid red;
+  margin-top: 80px;
 
-  .links {
-    border: 1px solid var(--accent);
+  .link {
+    padding:20px 20px 0px 0px
+  }
+  a{
+    text-decoration: none;
+    color: var(--primary-text);
+    line-height: 32px;
   }
 }
 
-footer a {
-  margin-left: 30px;
-  text-decoration: none;
-  color: black;
-}
+
 
 .project-header {
   width: 100%;
