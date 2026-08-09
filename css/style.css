@@ -913,22 +913,6 @@ hover::before adds highlight */
   filter: drop-shadow(4px 4px 2px #d5d5df);
 }
 
-/* motion design page  */
-.motion-gallery {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: space-evenly;
-}
-
-.motion-item {
-  display: flex;
-}
-
-.motion-item:nth-child(even) {
-  margin: 100px 0px 0px 0px;
-}
 
 hr {
   color: #665655;

@@ -1,116 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Anna Burns</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-  </head>
-  <body>
-    <header >
-      <a href="index.html" class="logo">
-        <img class="logo-icon" src="images/logo.svg" alt="Anna Burns" />
-      </a>
-      <nav>
-        <a href="index.html">Projects</a>
-        <a href="illustration.html">Art + Illustration</a>
-        <a href="motion-design.html" class="active-page">Motion Design</a>
-        <a href="about.html">About</a>
-      </nav>
-    </header>
-    <header class="mobile-nav">
-      <a href="index.html" class="logo">
-        <img class="logo-icon" src="images/logo.svg" alt="Anna Burns" />
-      </a>
-      <div class="menu-icon " onclick="toggleNav()">      </div>
-      <nav class="mobile-links" id="links">
-        <a href="index.html">Projects</a>
-        <a href="illustration.html">Art + Illustration</a>
-        <a href="motion-design.html" class="active-page">Motion Design</a>
-        <a href="about.html">About</a>
-      </nav>
-    </header>
-    <div id="overlay" onclick="off()"></div>
-    <div class="motion-gallery">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anna Burns</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 
-          <div class="motion-item">
-          <!-- lov -->
-      <iframe
-      width="560"
-      height="315"
-      src="https://www.youtube.com/embed/8ETVfxh6L2M?si=aJpd9AYb9uABN6-J"
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      referrerpolicy="strict-origin-when-cross-origin"
-      allowfullscreen
-    ></iframe>
-    </div>
+</head>
 
-    <div class="motion-item">
-          <!-- ttmt -->
-      <iframe
-      width="560"
-      height="315"
-      src="https://www.youtube.com/embed/GJSyGqlx0Kk?si=M-PN9ccJVr6z5Rjp"
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      referrerpolicy="strict-origin-when-cross-origin"
-      allowfullscreen
-    ></iframe>
-    </div>
-        
-    <div class="motion-item">
-    <!-- sword -->
-    <iframe
-    width="560"
-    height="315"
-    src="https://www.youtube.com/embed/tUvw6IuKVeQ?si=M-PN9ccJVr6z5Rjp"
-    title="YouTube video player"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    referrerpolicy="strict-origin-when-cross-origin"
-    allowfullscreen
-  ></iframe>
-    </div>
-      
-  <div class="motion-item">
-      <!-- portals -->
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/jps0JsW39TY?si=M-PN9ccJVr6z5Rjp"
-        title="YouTube video player"
-        frameborder="0"
+<body>
+  <header>
+    <a href="index.html" class="logo">
+      <img class="logo-icon" src="images/logo.svg" alt="Anna Burns" />
+    </a>
+    <nav>
+      <a href="index.html">Projects</a>
+      <a href="illustration.html">Art + Illustration</a>
+      <a href="motion-design.html" class="active-page">Motion Design</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+  <header class="mobile-nav">
+    <a href="index.html" class="logo">
+      <img class="logo-icon" src="images/logo.svg" alt="Anna Burns" />
+    </a>
+    <div class="menu-icon " onclick="toggleNav()"> </div>
+    <nav class="mobile-links" id="links">
+      <a href="index.html">Projects</a>
+      <a href="illustration.html">Art + Illustration</a>
+      <a href="motion-design.html" class="active-page">Motion Design</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+  <div id="overlay" onclick="off()"></div>
+  <div class="grid">
+
+    <div class="gdiv g50 col center-horizontal">
+      <!-- lov -->
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/8ETVfxh6L2M?si=aJpd9AYb9uABN6-J"
+        title="YouTube video player" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen
-      ></iframe>
-  </div>
-  <div class="motion-item">
-          <!-- kuretake -->
-          <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/tRWXkX0cZMQ?si=M-PN9ccJVr6z5Rjp"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
-  </div>
-
-
-
-
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
-  </body>
-  <script data-goatcounter="https://vethilm.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
-        <script src="script/nav.js"></script>
+
+    <div class="gdiv g50 col center-horizontal">
+      <!-- ttmt -->
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/GJSyGqlx0Kk?si=M-PN9ccJVr6z5Rjp"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <div class="gdiv g50 col center-horizontal">
+      <!-- sword -->
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/tUvw6IuKVeQ?si=M-PN9ccJVr6z5Rjp"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <div class="gdiv g50 col center-horizontal">
+      <!-- portals -->
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/jps0JsW39TY?si=M-PN9ccJVr6z5Rjp"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="gdiv g50 col center-horizontal">
+      <!-- kuretake -->
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/tRWXkX0cZMQ?si=M-PN9ccJVr6z5Rjp"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+
+
+
+  </div>
+</body>
+<script data-goatcounter="https://vethilm.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<script src="script/nav.js"></script>
+
 </html>
