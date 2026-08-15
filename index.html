@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,66 +8,57 @@
   <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon" />
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 
 </head>
-  <header>
-    <a href="index.html" class="logo" >
-        <img class="logo-icon" src="images/logo.svg" alt="Anna Burns">
-    </a>
-    <nav>
-      <a href="index.html" class="active-page">Projects</a>
-      <a href="illustration.html">Art + Illustration</a>
-      <a href="motion-design.html">Motion Design</a>
-      <a href="about.html">About</a>
-    </nav>
-  </header>
-  <header class="mobile-nav">
-    <a href="index.html" class="logo">
-      <img class="logo-icon" src="images/logo.svg" alt="Anna Burns" />
-    </a>
-    <div class="menu-icon " onclick="toggleNav()">      </div>
-    <nav class="mobile-links" id="links">
-      <a href="index.html"class="active-page">Projects</a>
-      <a href="illustration.html" >Art + Illustration</a>
-      <a href="motion-design.html">Motion Design</a>
-      <a href="about.html">About</a>
-    </nav>
-  </header>
-  <div id="overlay" onclick="off()"></div>
-  <div class="content ">
+<header>
+  <a href="index.html" class="logo">
+    <img class="logo-icon" src="images/brand/logo_white.svg" alt="Anna Burns">
+  </a>
+  <nav>
+    <a href="index.html" class="active-page">Projects</a>
+    <a href="illustration.html">Art + Illustration</a>
+    <a href="motion-design.html">Motion Design</a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
+<header class="mobile-nav">
+  <a href="index.html" class="logo">
+    <img class="logo-icon" src="images/brand/logo_white.svg" alt="Anna Burns" />
+  </a>
+  <div class="menu-icon" onclick="toggleNav()"> </div>
+  <nav class="mobile-links" id="links">
+    <a href="index.html" class="active-page">Projects</a>
+    <a href="illustration.html">Art + Illustration</a>
+    <a href="motion-design.html">Motion Design</a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
+<div id="overlay" onclick="off()"></div>
+<div class="content ">
   <section class="intro">
     <div class="intro-text">
       <h1>Hi, I'm Anna.</h1>
       <h2> Product designer</h2>
       <div id="floating-buttons">
-      <a href="" class="icon floating" id="email"><img src="images/icons/ic_round-email.png" alt=""></a>
-      <a href="" class="icon floating" id="git"><img src="images/icons/mdi_github.png" alt=""></a>
-      <a href="https://www.linkedin.com/in/anna-c-burns/" class="icon floating"id="linkedin"><img src="images/icons/linkedin.svg" alt=""></a>
-      <a href="games.html" class="icon floating" id="game"><img src="images/icons/ri_game-fill.png" alt=""></a>
-      <a href="https://www.instagram.com/vethilm/" class="icon floating" id="insta"><img src="images/icons/ri_instagram-fill.png" alt=""></a>
+        <a  href="mailto:burnsc376&#064;gmail&#046;com" class="icon floating" id="email"><img src="images/icons/ic_round-email.png" alt=""></a>
+        <a href="https://github.com/vethilm" class="icon floating" id="git"><img src="images/icons/mdi_github.png" alt=""></a>
+        <a href="https://www.linkedin.com/in/anna-c-burns/" class="icon floating" id="linkedin"><img
+            src="images/icons/mdi_linkedin.png" alt=""></a>
+        <a href="games.html" class="icon floating" id="game"><img src="images/icons/ri_game-fill.png" alt=""></a>
+        <a href="https://www.instagram.com/vethilm/" class="icon floating" id="insta"><img
+            src="images/icons/ri_instagram-fill.png" alt=""></a>
       </div>
-      
+
     </div>
-  
+
   </section>
-  <div class="divider "></div> 
   <!-- rplace divider with arrow -->
+   
   <div class="grid halftone">
-     <div class="gdiv g50 col center-horizontal fill">
-      <div class="project-thumbnail">
-        <a href="my-muse.html">
-          <img src="images/home/MyMuseThumbnail.png" alt="">
-        </a>
-      </div>
-      <div class="project-desc">
-        <h2>My Muse</h2>
-        <p class="caption-text">UX/UI Research and Design</p>
-        <p>A community driven, music focused social media app.</p>
-      </div>
-      <a href="my-muse.html" class="ctaBtn">Read Case Study</a>
-    </div>
-    <div class="gdiv g50 col center-horizontal fill">
+        <div class="gdiv g50 col center-horizontal fill">
       <div class="project-thumbnail">
         <a href="clikd.html">
           <img src="images/home/ClikdThumbnail.png" alt="">
@@ -77,7 +69,20 @@
         <p class="caption-text">UI/UX Design</p>
         <p>Prototype for a mobile gaming communication app</p>
       </div>
-       <a href="clikd.html" class="ctaBtn">View Project</a>
+      <a href="clikd.html" class="ctaBtn" id="clikd">View Project</a>
+    </div>
+    <div class="gdiv g50 col center-horizontal fill">
+      <div class="project-thumbnail">
+        <a href="my-muse.html">
+          <img src="images/home/MyMuseThumbnail.png" alt="">
+        </a>
+      </div>
+      <div class="project-desc">
+        <h2>My Muse</h2>
+        <p class="caption-text">UX/UI Research and Design</p>
+        <p>A community driven, music focused social media app.</p>
+      </div>
+      <a href="my-muse.html" class="ctaBtn" id="my-muse">View Project</a>
     </div>
 
     <div class="gdiv g50 col center-horizontal fill">
@@ -91,10 +96,10 @@
         <p class="caption-text">Visual Design</p>
         <p>A set of marketing materials for the movie Railhead</p>
       </div>
-      <a href="railhead.html" class="ctaBtn">Read Case Study</a>
+      <a href="railhead.html" class="ctaBtn" id="railhead">View Project</a>
     </div>
 
-    
+
     <div class="gdiv g50 col center-horizontal">
       <div class="project-thumbnail">
         <a href="rota.html">
@@ -106,33 +111,31 @@
         <p class="caption-text">Game Design</p>
         <p>A game like tic-tac-toe based on boards found across the Roman Empire.</p>
       </div>
-      <a href="rota.html" class="ctaBtn">See Project</a>
+      <a href="rota.html" class="ctaBtn" id="rota">View Project</a>
     </div>
-</div>
+  </div>
 </div>
 
 <footer>
   <div class="grid w100">
-  <div class="gdiv g50 contact col">
-    <h3>Get in Touch</h3>
-    <a href="mailto:burnsc376&#064;gmail&#046;com">burnsc376&#064;gmail&#046;com</a>
-    <div class="row">
-      <a class = "link" href="index.html">Projects</a>
-      <a class = "link"href="illustration.html">Art + Illustration</a>
-      <a class = "link" href="motion-design.html">Motion Design</a>
-      <a class = "link" href="about.html">About</a>
+    <div class="gdiv g50 contact col">
+      <h3>Get in Touch</h3>
+      <a href="mailto:burnsc376&#064;gmail&#046;com">burnsc376&#064;gmail&#046;com</a>
+    </div>
+    <div class="gdiv g50">
+      <button>play a game?</button>
+    </div>
+    <div class="gdiv g100">
+      <div class="row">
+        <a class="link" href="index.html">Projects</a>
+        <a class="link" href="illustration.html">Art + Illustration</a>
+        <a class="link" href="motion-design.html">Motion Design</a>
+        <a class="link" href="about.html">About</a>
+      </div>
     </div>
   </div>
-  <div class="gdiv g50">
-    <button>play a game?</button>
-  </div>
-  </div>
-
-
-
-  
 </footer>
-<script data-goatcounter="https://vethilm.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
-        <script src="script/nav.js"></script>
+<script data-goatcounter="https://vethilm.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<script src="script/nav.js"></script>
+
 </html>
