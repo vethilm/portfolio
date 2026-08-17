@@ -162,7 +162,7 @@ header {
   z-index: 2;
 }
 .gdiv {
-  border: 1px solid rgba(56, 55, 55, 0.877);
+  /* border: 1px solid rgba(56, 55, 55, 0.877); */
   padding: 8px 0px;
 }
 .g100 {
@@ -270,7 +270,7 @@ header {
   width: 120px;
   display: flex;
   align-items: center;
-  background-image: url("../images/icons/arrow_light_blue.png");
+  background-image: url("../images/icons/arrow-white.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -283,6 +283,11 @@ header {
   width: 100%;
   text-align: center;
   font-size: 18px;
+}
+#clikd{
+  .arrow{
+      background-image: url("../images/icons/arrow_dark_blue.png");
+  }
 }
 
 .logo-icon {
@@ -714,10 +719,6 @@ footer {
   flex-direction: row-reverse;
 } */
 
-.motion-overview {
-  width: 40%;
-  margin-top: 40px;
-}
 
 #gallery {
   display: none;
