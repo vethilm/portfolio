@@ -143,6 +143,7 @@ header {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
+  padding: 0px 20px;
 }
 .text-list {
   li {
