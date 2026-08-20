@@ -28,13 +28,18 @@
   box-sizing: border-box;
   /* cursor: url(../images/cursors/default.png), default; */
 }
+html{
+  max-width: 100VW;
+  overflow-x: hidden;
+  -webkit-overflow-x:hidden;
+}
 
 body {
   font-family: "Geologica";
   font-style: normal;
   font-weight: 200;
   line-height: 1.6;
-  padding: 20px 0px;
+  padding: 20px 0px; max-width: 100VW;
   overflow-x: hidden;
   background-color: var(--primary-background);
 }
@@ -53,7 +58,6 @@ body {
 .content {
   width: 75vw;
   margin: auto;
-  overflow-x: hidden;
 }
 /* #region loading*/
 #loader {
