@@ -1,10 +1,10 @@
 :root{
-  --primary-background: #f6f1ef;
-  --primary-text: #000;
-  --accent: #2F5BA2;
+  --primary-background: #181816;
+  --primary-text: #eee4e4;
+  --accent: #195C80;
   --accent-hover: #10274a;
-  --on-accent:#f6f1ef;
-  --text-color:#000;
+  --on-accent: #f8f8ef;
+  --text-color:#eee4e4;
 }
 
 html {
