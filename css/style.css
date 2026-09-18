@@ -1210,34 +1210,6 @@ iframe .motion-item {
 @media (max-width: 600px) {
   .intro {
     width: 100%;
-<<<<<<< HEAD
-      margin-left: 0px;
-      margin-top: auto;
-      height: 60vh;
-      justify-content: start;
-      align-items: start;
-      background-position: center;
-      background-image: url(../images/home/heroimg-blue-mobile.png);
-      background-size: cover;
-  }
-  }
-  .intro-text{
-    margin-top: -20%;
-    width: 100%;
-    h1{
-      line-height: 30px;;
-    }
-    h2{
-    line-height: 30px;
-    }
-  }
-  body{
-    width: 100%;
-    overflow-x: hidden;
-  } 
-  .art-gallery{
-    gap:0px
-=======
     margin-left: 0px;
     margin-top: 0px;
     height: 60vh;
@@ -1245,7 +1217,7 @@ iframe .motion-item {
     align-items: start;
     background-position: bottom;
     background-image: url(../images/home/heroimg-color-mobile.png);
->>>>>>> 0774d32e5abd65c6ec4a553402f99689cd69137f
+  }
   }
 
   .intro-text {
