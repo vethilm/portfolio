@@ -1218,7 +1218,7 @@ iframe .motion-item {
     background-position: bottom;
     background-image: url(../images/home/heroimg-color-mobile.png);
   }
-  }
+
 
   .intro-text {
     margin-top: -10%;
@@ -1238,7 +1238,7 @@ iframe .motion-item {
     overflow-x: hidden;
   }
 
-
+  }
 
   .project-thumbnail {
     width: 100%;
