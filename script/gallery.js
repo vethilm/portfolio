@@ -20,8 +20,8 @@ const imageURLs = [
     'https://64.media.tumblr.com/b60c0bf1bf4755eea62d535fa5343913/306428954a4182d4-57/s540x810/f39f4c550c3c6970842c6c1c5ecf03bc3a7e43c5.jpg',
     'https://i.postimg.cc/bwf2DzzF/helios.png',
 ];
-
-document.getElementById("loaderPath").style.stroke= randomColor();
+document.getElementsByTagName("footer")[0].style.display="none"
+document.getElementsByClassName("loader")[0].style.backgroundColor= randomColor();
 
 preloadImages(imageURLs, (error, images) => {
     if (error) {
@@ -29,7 +29,8 @@ preloadImages(imageURLs, (error, images) => {
     } else {
         console.log('Images preloaded successfully:', images);
         setTimeout(()=>{
-            document.getElementById("loader").style.display = "none";
+            document.getElementsByTagName("footer")[0].style.display="block"
+            document.getElementsByClassName("loader")[0].style.display = "none";
             gallery.style.display="block";
             
             fillGallery(images);

@@ -60,26 +60,28 @@ body {
   margin: auto;
 }
 /* #region loading*/
-#loader {
-  animation: rotate 2s linear infinite;
-  z-index: 2;
+.loader {
+    z-index: 2;
   position: absolute;
   top: 50%;
   left: 50%;
   margin: -25px 0 0 -25px;
   width: 50px;
   height: 50px;
+  width: 50px;
+  --b: 8px; 
+  aspect-ratio: 1;
+  border-radius: 50%;
+  padding: 1px;
+  background: conic-gradient(#0000 10%,var(--primary-background)) content-box;
+  -webkit-mask:
+    repeating-conic-gradient(#0000 0deg,var(--primary-background)1deg 20deg,#0000 21deg 36deg),
+    radial-gradient(farthest-side,#0000 calc(100% - var(--b) - 1px),var(--primary-background)calc(100% - var(--b)));
+  -webkit-mask-composite: destination-in;
+          mask-composite: intersect;
+  animation:l4 1s infinite steps(10);
 }
-
-.path {
-  stroke: none;
-  stroke-linecap: round;
-  animation: dash 1.5s ease-in-out infinite;
-}
-
-/* a {
-  cursor: url(../images/cursors/pointer.png), pointer !important;
-} */
+@keyframes l4 {to{transform: rotate(1turn)}}
 img {
   pointer-events: none;
 }
