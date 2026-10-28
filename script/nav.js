@@ -18,3 +18,7 @@ function toggleNav() {
     document.getElementById("overlay").style.display = "none";
     document.getElementById("links").style.display="none"
   }
+
+  function pacman(){
+    
+  }
