@@ -1109,11 +1109,15 @@ hover::before adds highlight */
   padding: 10px;
   border-radius: 25px;
   margin: 5px;
-  width: 20%;
-  aspect-ratio: 1;
+  width: 100%;
 
   b {
     color: var(--accent);
+    width: 100%;
+    text-align: center;
+  }
+  p{
+    font-size: 16px;
   }
 }
 
